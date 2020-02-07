@@ -1,1 +1,179 @@
-// Specific CSS for your home-page
+@font-face {
+   font-family: 'utopian';
+   src: font-url('utopiantwobw.otf') format('opentype');
+}
+
+
+body {
+  font-family: Dystopian;
+}
+
+.logodiv {
+  top: 424px;
+  // left: 590px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows:  15vh 5vh 5vh;;
+  justify-items: center;
+  margin-top: 40vh;
+}
+
+
+.logo {
+  display: block;
+}
+
+.assembleia {
+  // position: fixed;
+  width: 738px;
+  height: 97px;
+  // flex-grow:1;
+}
+
+.tag {
+  width: 172px;
+  height: 30px;
+}
+
+.position1 {
+  position:absolute;
+  top: 69px;
+  left: 10vw;
+}
+
+.position2 {
+  position:absolute;
+  top: 304px;
+  left: 335px;
+}
+
+.position3 {
+  position:absolute;
+  top: 85vh;
+  left: 10vw;
+}
+
+.position4 {
+  position:absolute;
+  top: 70vh;
+  left: 1231px;
+}
+
+.position5 {
+  position:absolute;
+  top: 69px;
+  left: 90vw;
+}
+
+.fadein {
+  top:0px;
+  margin:auto;
+}
+
+.fadein img {
+    position:absolute;
+    left:-65px;
+    top:0;
+    -webkit-animation-name: fade;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 6s;
+    animation-name: fade;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+}
+
+@-webkit-keyframes fade {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    33% {opacity: 1;}
+    53% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+@keyframes fade {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    33% {opacity: 1;}
+    53% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+#f1 {
+  -webkit-animation-delay: -2s;
+}
+
+#f2 {
+  -webkit-animation-delay: -4s;
+}
+
+#f3 {
+}
+
+#f4 {
+}
+
+#f5 {
+  -webkit-animation-delay: -4s;
+}
+#f6 {
+  -webkit-animation-delay: -2s;
+  left:50%;
+}
+
+#f7 {
+}
+
+#f8 {
+  -webkit-animation-delay: -4s;
+}
+#f9 {
+  -webkit-animation-delay: -2s;
+}
+
+
+#f10 {
+}
+
+#f11 {
+  -webkit-animation-delay: -4s;
+}
+#f12 {
+  -webkit-animation-delay: -2s;
+}
+
+#f13 {
+}
+
+#f14 {
+  -webkit-animation-delay: -4s;
+}
+#f15 {
+  -webkit-animation-delay: -2s;
+}
+
+.amarelo {
+  width: 79px;
+  height: 154px;
+}
+
+.bola {
+  width: 80px;
+  height: 80px;
+}
+
+.verde {
+  width: 154px;
+  height: 79px;
+}
+
+.cadeia {
+  width: 79px;
+  height: 79px;
+}
+
+.meialua {
+  width: 173px;
+  height: 79px;
+}
+
+
