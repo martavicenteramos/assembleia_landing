@@ -1,68 +1,19 @@
 @font-face {
-   font-family: 'utopian';
-   src: font-url('utopiantwobw.otf') format('opentype');
+   font-family: 'DystopianRegular';
+   src: font-url('dystopianregular.ttf') format('truetype');
 }
 
+@font-face {
+   font-family: 'DystopianBold';
+   src: font-url('dystopianbold.ttf') format('truetype');
+}
 
 body {
-  font-family: Dystopian;
-}
-
-.logodiv {
-  top: 424px;
-  // left: 590px;
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows:  15vh 5vh 5vh;;
-  justify-items: center;
-  margin-top: 40vh;
-}
-
-
-.logo {
-  display: block;
-}
-
-.assembleia {
-  // position: fixed;
-  width: 738px;
-  height: 97px;
-  // flex-grow:1;
-}
-
-.tag {
-  width: 172px;
-  height: 30px;
-}
-
-.position1 {
-  position:absolute;
-  top: 69px;
-  left: 10vw;
-}
-
-.position2 {
-  position:absolute;
-  top: 304px;
-  left: 335px;
-}
-
-.position3 {
-  position:absolute;
-  top: 85vh;
-  left: 10vw;
-}
-
-.position4 {
-  position:absolute;
-  top: 70vh;
-  left: 1231px;
-}
-
-.position5 {
-  position:absolute;
-  top: 69px;
-  left: 90vw;
+  margin-right: auto;
+  margin-left:  auto;
+  max-width: 960px;
+  padding-right: 10px;
+  padding-left:  10px;
 }
 
 .fadein {
@@ -142,6 +93,7 @@ body {
 }
 
 #f13 {
+  left:50%;
 }
 
 #f14 {
@@ -151,29 +103,295 @@ body {
   -webkit-animation-delay: -2s;
 }
 
-.amarelo {
-  width: 79px;
-  height: 154px;
+ #f13 {
+    left:0%;
+  }
+
+  #f8 {
+    left:0%;
+  }
+
+
+  .position1 {
+    position: absolute;
+    top: 5vh;
+    left: 89vw;
+  }
+
+  .position2 {
+    position: absolute;
+    top: 5vh;
+    left: 25vw;
+  }
+
+  .position3 {
+    position: absolute;
+    top: 28vh;
+    left: 28vw;
+  }
+
+  .position4 {
+    position: absolute;
+    top: 60vh;
+    left: 29vw;
+  }
+
+  .position5 {
+    display: none;
+  }
+
+  .verde {
+    width: 94px;
+    height: 48px;
+  }
+
+  .amarelo {
+    width: 48px;
+    height: 94px;
+  }
+  .cadeia {
+    width: 48px;
+    height: 48px;
+  }
+  .bola {
+    width: 49px;
+    height: 49px;
+  }
+
+  .meialua {
+    width: 94px;
+    height: 48px;
+  }
+
+  .logo {
+    display: block;
+    position: absolute;
+    top: 37vh;
+    left: 10vw;
+    width:307.6px;
+    height:102px;
+  }
+
+  .info {
+    position: absolute;
+    left: 40vw;
+    top: 55vh;
+    font-size: 14px;
+    line-height: 8px;
+    .title {
+      font-family: DystopianBold;
+    }
+  }
+
+
+
+// Smallest device
+@media (min-width: 100px) and (max-width: 575px) {
+  // .animation-web {
+  //   display: none;
+  // }
+  // .logo {
+  //   top: 399px;
+  //   left: 50px;
+  //   width: 314px;
+  //   height: 41px;
+  // }
+  // .tag {
+  //   top: 492px;
+  //   left: 156px;
+  //   width: 102px;
+  //   height: 18px;
+  // }
+  // .logodiv {
+  //   grid-template-rows:  8vh 5vh 20vh;
+  // }
+ }
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  // .animation-web {
+  //   display: none;
+  // }
+  // .logo {
+  //   top: 399px;
+  //   left: 50px;
+  //   width: 314px;
+  //   height: 41px;
+  // }
+  // .tag {
+  //   top: 492px;
+  //   left: 156px;
+  //   width: 102px;
+  //   height: 18px;
+//   // }
+//   #d5 {
+//     grid-template-rows:  8vh 5vh 20vh;
+//   }
+//   #d1 {
+//     position: absolute;
+//     width: 94px;
+//     height: 48px;
+//     top: 5vh;
+//     left: 10vw;
+//   }
+//   #d2 {
+//     position: absolute;
+//     width: 48px;
+//     height: 94px;
+//     top: 5vh;
+//     left: 80vw;
+//   }
+//   #d3 {
+//     position: absolute;
+//     top: 32vh;
+//     left: 27vw;
+//     width: 48px;
+//     height: 48px;
+//   }
+//   #d4 {
+//     position: absolute;
+//     top: 73vh;
+//     left: 10vw;
+//     width: 49px;
+//     height: 49px;
+//   }
 }
 
-.bola {
-  width: 80px;
-  height: 80px;
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
 }
 
-.verde {
-  width: 154px;
-  height: 79px;
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .logo {
+    display: block;
+    position: absolute;
+    top: 40vh;
+    left: 28vw;
+    width:739px;
+    height:255px;
+  }
+
+  .position1 {
+    position:absolute;
+    top: 69px;
+    left: 10vw;
+  }
+
+  .position2 {
+    position:absolute;
+    top: 304px;
+    left: 335px;
+  }
+
+  .position3 {
+    position:absolute;
+    top: 85vh;
+    left: 10vw;
+  }
+
+  .position4 {
+    position:absolute;
+    top: 70vh;
+    left: 75vw;
+  }
+
+  .position5 {
+    display: unset;
+    position:absolute;
+    top: 69px;
+    left: 90vw;
+  }
+
+  .info {
+    position: absolute;
+    left: 80%;
+    top: 75vh;
+    font-family: DystopianRegular;
+    line-height: 8px;
+    text-align: right;
+    font-size: 18px;
+      .title {
+      font-family: DystopianBold;
+      }
+  }
+
+  .amarelo {
+    width: 79px;
+    height: 154px;
+  }
+
+  .bola {
+    width: 80px;
+    height: 80px;
+  }
+
+  .verde {
+    width: 154px;
+    height: 79px;
+  }
+
+  .cadeia {
+    width: 79px;
+    height: 79px;
+  }
+
+  .meialua {
+    width: 173px;
+    height: 79px;
+  }
+
+
+  // .mobile {
+  //   display: none;
+  // }
+  // .logo {
+  // display: block;
+  // }
+
+  // .assembleia {
+  //   // position: fixed;
+  //   width: 738px;
+  //   height: 97px;
+  //   // flex-grow:1;
+  // }
+
+  // .tag {
+  //   width: 172px;
+  //   height: 30px;
+  // }
+  // .logodiv {
+  //   top: 424px;
+  //   // left: 590px;
+  //   display: grid;
+  //   grid-template-columns: 100%;
+  //   grid-template-rows:  5vh 5vh 5vh;
+  //   justify-items: center;
+  //   margin-top: 40vh;
+  // }
 }
 
-.cadeia {
-  width: 79px;
-  height: 79px;
+@media (min-width: 1063px) and (max-width: 575px) {
+  // .animation-web {
+  //   display: none;
+  // }
+  // .logo {
+  //   top: 399px;
+  //   left: 50px;
+  //   width: 314px;
+  //   height: 41px;
+  // }
+  // .tag {
+  //   top: 492px;
+  //   left: 156px;
+  //   width: 102px;
+  //   height: 18px;
+  // }
+  // .logodiv {
+  //   grid-template-rows:  8vh 5vh 20vh;
+  // }
+ }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
 }
-
-.meialua {
-  width: 173px;
-  height: 79px;
-}
-
-
